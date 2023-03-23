@@ -16,8 +16,15 @@ import org.springframework.transaction.PlatformTransactionManager;
 public class BatchConfig {
 
 	/*
-	 * TAREFA = JOB Criando o metodo que retorna o Job e que configura como esse Job
-	 * será criado
+	 * TAREFA = JOB 
+	 * Criando o metodo que retorna o Job e que configura como esse Job será criado
+	 * 
+	 * @jobRepositoy - Orquestra o fluxo de execução 
+	 * @step - São varias etapas 
+	 * @build - Criar instancia de Jobs
+	 * @tasklet - Uma step mais simples, para uma tarefa simples, 
+	 * executa e encerra, recebe uma interface
+	 * @transactionManager - Gerenciador de transação
 	 */
 
 	@Bean
